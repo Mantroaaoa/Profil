@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    margin: 0px;
+    width: 100%;
+    height: 204px;
+    background-color: aqua;
+    color: white;
+    background: linear-gradient(to right bottom, #4790e3, #043f53);
+    padding: 5px auto;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.nama{
+    padding-top: 12px;
+    padding-bottom: 2px;
+}
+.subnama{
+    font-size: 20px;
+    padding-top: 0px;
+}
+.tentang_saya{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px 9px rgb(188, 188, 188);
+    margin: 10px auto;
+    margin-bottom: 0%;
+    padding: 0.1px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-style: none;
+}
+h3{
+    font-size: 30px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    color: #043f53;
+}
+h4{
+    color: #0d80a7;
+    font-size: 20px;
+}
+.text1{
+    padding-left: 20px;
+}
+.text2{
+    padding-left: 20px;
+}
+.box{
+    width: 97%;
+    background-color: #4f4fff;
+    border: 1.5px solid #4f4fff;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+.box1{
+    width: 97%;
+    background-color: #4f4fff;
+    border: 3px solid #4f4fff;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+.skill_saya{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px 9px rgb(188, 188, 188);
+    margin: 10px auto;
+    margin-bottom: 0%;
+    padding: 0.1px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    
+}
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6{
+    width: 27%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px 9px #bcbcbc;
+    margin-bottom: 0%;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-style: none;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 35px;
+}
+.kontak{
+    padding: 20px;
+}
+footer{
+    padding: 20px;
+    padding-top: 0px;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+.email, .wa{
+    text-decoration: none;
+    color: #4790e3;
+}

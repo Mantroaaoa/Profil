@@ -1,0 +1,7 @@
+.tentang_saya, .skill_saya, .skill1, .skill2, .skill3, .skill4, .skill5, .skill6{
+    transition: 0.7s;
+}
+.tentang_saya:hover, .skill_saya:hover, .skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover, .skill6:hover{
+    transform: translateY(-2%);
+    box-shadow: 2px 2px 16px #909090;
+}
