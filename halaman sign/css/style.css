@@ -10,7 +10,7 @@ body{
     margin-left: 500px;
     background: linear-gradient(#ffffff34, #ffffff27);
     width: 300px;
-    height: 330px;
+    height: 380px;
     padding: 10px;
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
@@ -18,7 +18,7 @@ body{
     box-shadow: 5px 5px 25px rgb(139, 139, 139);
     backdrop-filter: blur(7px);
 }
-.email, .pass{
+.email, .pass, .usernama{
     border-radius: 45px;
     border-width: 1px;
     width: 250px;
@@ -26,13 +26,14 @@ body{
     margin-top: 0px;
     padding-left: 15px;
     backdrop-filter: blur(7px);
-    background: linear-gradient(#ffffff34, #ffffff27);
+    background: linear-gradient(#d2d2d234,#ffffff27);
     border-color: white;
 }
-.email2, .pass2{
+.email2, .pass2, .usernama2{
     margin-bottom: 0px;
     text-align: start;
     padding-left: 25px;
+    color: rgb(0, 0, 0);
 }
 button{
     border: 1px solid black;
@@ -51,7 +52,6 @@ button{
     justify-content: center;
     cursor: pointer;
     font-size: 12px;
-    border-color: white;
 }
 .garis{
     border: 1px solid black;

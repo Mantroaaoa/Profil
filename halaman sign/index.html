@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Halaman Sign</title>
     <link rel="stylesheet" href="css/animasi.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="FA/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h3>LOGIN</h3>
+        <h3>SIGN</h3>
         <div class="garis"></div>
         <br>
         <div class="daftar">
+            <p class="usernama2"><i class="fas fa-user"></i> User Name</p>
+            <input class="usernama" type="text" placeholder="Masukan User Name Anda Disini">
             <p class="email2"><i class="fas fa-envelope"></i> Email Adress</p>
             <input class="email" type="text" placeholder="Masukan Email Anda Disini">
             <p class="pass2"><i class="fas fa-lock"></i> Password</p>
             <input class="pass" type="password" placeholder="Masukan Password Anda Disini"> <br>
             <div class="tombol">
-                <button onclick="Exer()">Login</button>
+                <button onclick="Exer()">Sign</button>
             </div>
-            <p class="footer">Tidak Punya Akun? <a href="halaman sign/index.html">Sign</a></p>
+            <p class="footer">Sudah Punya Akun? <a href="../index.html">Login</a></p>
         </div>
     </div>
     <script>
         function Exer(){
-            window.alert("Maaf Belum Menguasai JavaScript:)");
+            window.alert("Maaf, Belum menguasai JavaScript:)");
         }
     </script>
 </body>
