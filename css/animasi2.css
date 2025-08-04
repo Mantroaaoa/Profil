@@ -1,0 +1,202 @@
+.testimonial-slider-container {
+            width: 100%;
+            overflow: hidden; 
+            padding: 20px 0;
+            background-color: #ffffff; 
+        }
+
+        .testimonial-track {
+            display: flex;
+            width: calc(30% * 10 + 40px * 10); 
+            animation: scroll-animation 30s linear infinite;
+        }
+
+        .testimonial-track:hover {
+            animation-play-state: paused;
+        }
+
+        .testimonial-card {
+            border: 1px solid black;
+            border-style: none;
+            border-radius: 20px;
+            box-shadow: 3px 3px 15px rgb(199, 199, 199), -3px 0px 15px rgb(199, 199, 199);
+            width: 30%; 
+            height: auto;
+            padding: 10px;
+            margin: 20px; 
+            background-color: #e7e8e8;
+            flex-shrink: 0; 
+            box-sizing: border-box; 
+            text-align: center; 
+        }
+        
+        .testimonial-card .bintang, .testimonial-card h4 {
+            text-align: center;
+        }
+
+        @keyframes scroll-animation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-30% * 5 - 40px * 5));
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            #Testimoni{
+                display: none;
+            }
+        }
+
+nav{
+    animation:nav linear 1s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1);
+    animation-delay: 0.1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes nav{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+.poto{
+    animation: poto linear 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+@keyframes poto{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.judul{
+    animation: judul linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.01s;
+    opacity: 0;
+}
+@keyframes judul{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.judul2{
+    animation: judul2 linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.05s;
+    opacity: 0;
+}
+@keyframes judul2{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.text2{
+    animation: p linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+@keyframes p{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.tombol1{
+    animation: tombol linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+@keyframes tombol{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.hp{
+    animation: hp linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+@keyframes hp{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.Pelanggan{
+    animation: pela linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+@keyframes pela{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.Layanan{
+    animation: lay linear 0.5s;
+    animation-timing-function: cubic-bezier(.7,-1,.1,1.5);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+@keyframes lay{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

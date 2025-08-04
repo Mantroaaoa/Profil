@@ -1,21 +1,41 @@
-/*.container{
-    animation: container linear 0.6s;
-    animation-timing-function: ease-in;
-    opacity: 0;
-    animation-fill-mode: forwards;
+.poto:hover{
+    transform: rotate(0deg) scale(1.05);
+    background-color: #d7d7d7;
+    box-shadow: 5px 5px 7px rgb(92, 92, 92);
 }
-@keyframes container{
-    0%{
-        opacity: 0;
-        scale: 400%;
-    }
-    100%{
-        scale: 100%;
-        opacity: 100%;
-    }
-} */
-button:hover{
-    color: rgb(255, 255, 255);
-    background:linear-gradient(blue, rgb(90, 90, 214)) ;
-    size: 2x;
+.poto img:hover{
+    transform: translateY(-4px) scale(1.05) rotate(0deg);
+    filter: drop-shadow(3px 3px 7px -2px gray);
+}
+.tombol1:hover{
+    background: linear-gradient(to right, rgb(30, 255, 0), rgb(0, 255, 157));
+    box-shadow: 5px 5px 7px rgb(92, 92, 92);
+    transform: scale(1.07) translatey(-4px) !important;
+}
+.logo:hover{
+    transform: scale(1.07) translatey(-4px);
+    filter: drop-shadow(3px 3px 7px -2px gray);
+}
+nav ul li:hover{
+    transform: translatey(-4px) scale(1.03);
+}
+.ip13:hover, .ip13pro:hover, .ip11:hover, .ip15:hover, .ip16:hover, .ip16pro:hover{
+    transform: translateY(-20px) scale(1.02) !important;
+    background-color: #d7d7d7;
+    box-shadow: 0px 10px 15px -2px rgb(203, 203, 203), -10px 0px 15px -2px rgb(203, 203, 203), 10px 0px 15px -2px rgb(203, 203, 203);
+}
+.ip13 img:hover, .ip13pro img:hover, .ip11 img:hover, .ip15 img:hover, .ip16 img:hover, .ip16pro img:hover{
+    transform: translateY(-7px) scale(1.05);
+}
+.BookingInstan:hover, .jam:hover, .KualitasTerjamin:hover{
+    transform: translateY(-20px) scale(1.02) !important;
+    background-color: #d7d7d7;
+    box-shadow: 0px 10px 15px -2px rgb(203, 203, 203), -10px 0px 15px -2px rgb(203, 203, 203), 10px 0px 15px -2px rgb(203, 203, 203);
+}
+.BookingInstan i:hover, .jam i:hover, .KualitasTerjamin i:hover{
+    transform: translateY(-8px) scale(1.02);
+}
+.loksi:hover, .telp:hover, .mail:hover{
+    background-color: rgba(255, 255, 255, 0.194);
+    transform: scale(1.1) translateY(-10px) !important;
 }
