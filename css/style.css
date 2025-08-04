@@ -420,7 +420,7 @@ section{
     border-radius: 15px;
     padding: 20px;
     margin: 30px;
-    transition:  0.5s cubic-bezier(.7,-1,.1,1.5);
+    transition:  0.5s cubic-bezier(.7,-1,.1,1.5) !important;
 }
 footer{
     display: flex;
@@ -483,6 +483,12 @@ footer{
     }
     .cop{
         margin-left: 45%;
+    }
+    #Lokasi{
+        background-color: white;
+    }
+    .LokasiP{
+        background-color: #dbe2e2;
     }
     .kartoe{
         display: flex;
