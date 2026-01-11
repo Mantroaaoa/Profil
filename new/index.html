@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depot Mini</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pesan">Pesan</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+
+            <div class="textNav">
+                <h3>Depot <span>Mini</span></h3>
+                <i class="fas fa-store"></i>
+            </div>
+        </nav>
+    </header>
+    <div id="menu" class="container">
+        <div class="pA">
+            <h3>
+                Paket A
+            </h3>
+            <h2 class="harga">
+                Rp 25.000
+            </h2>
+            <p>
+                (Nasi + Ayam + Minuman)
+            </p>
+        </div>
+        <div class="pB">
+            <div class="badge">Terlaris!</div>
+            <h3>
+                Paket B
+            </h3>
+            <h2 class="harga">
+                Rp 30.000
+            </h2>
+            <p>
+                (Nasi + Ayam + Minuman + Kentang)
+            </p>
+        </div>
+        <div class="pC">
+            <h3>
+                Paket C
+            </h3>
+            <h2 class="harga">
+                Rp 40.000
+            </h2>
+            <p>
+                (Nasi + Ayam + Minuman + Kentang + Sempol)
+            </p>
+        </div>
+
+
+        <div class="main-wrapper">
+        <div class="order-card">
+            <h3><i class="fas fa-cash-register"></i> Kasir Depot Mini</h3>
+            
+            <div id="pesan" class="input-group">
+                <label>Pilih Menu</label>
+                <select id="pilih-paket" class="input-style">
+                    <option value="0">-- Klik Untuk Pilih --</option>
+                    <option value="25000">Paket A (Rp 25.000)</option>
+                    <option value="30000">Paket B (Rp 30.000)</option>
+                    <option value="40000">Paket C (Rp 40.000)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Jumlah Porsi</label>
+                <input type="number" id="jumlah-porsi" class="input-style" placeholder="Contoh: 2">
+            </div>
+
+            <button id="btn-cek-harga" onclick="cekHarga()" class="btn-proses">CEK HARGA</button>
+
+            <div id="container-total-bayar" style="display: none;">
+                <div class="divider"></div>
+                <h4 id="display-cek-harga">Total: Rp 0</h4>
+                
+                <div class="input-group">
+                    <label>Uang Tunai (Bayar)</label>
+                    <input type="number" id="uang-bayar" class="input-style" placeholder="Rp 0">
+                </div>
+                
+                <button id="btn-aksi-bayar" onclick="prosesBayar()" class="btn-proses" style="background: #27ae60;">PROSES BAYAR</button>
+            </div>
+        </div>
+
+        <div id="container-struk" class="struk-wrapper" style="display: none;">
+            <div class="struk-kertas" id="area-cetak">
+                <div class="struk-header">
+                    <h2>DEPOT MINI</h2>
+                    <p>Abiansemal, Bali</p>
+                    <p id="tgl-struk" style="font-size: 11px;"></p>
+                </div>
+                
+                <div class="divider-dashed"></div>
+                
+                <div class="flex-row">
+                    <span id="res-nama-paket"></span>
+                    <span id="res-harga-satuan"></span>
+                </div>
+                <div class="flex-row">
+                    <span id="res-qty"></span>
+                    <span id="res-subtotal"></span>
+                </div>
+                
+                <div class="divider-dashed"></div>
+                
+                <div class="flex-row bold">
+                    <span>TOTAL</span>
+                    <span id="res-total"></span>
+                </div>
+                <div class="flex-row">
+                    <span>TUNAI</span>
+                    <span id="res-bayar"></span>
+                </div>
+                <div class="flex-row">
+                    <span>KEMBALI</span>
+                    <span id="res-kembali"></span>
+                </div>
+                
+                <div class="divider-dashed"></div>
+                <p style="text-align: center; font-size: 11px; margin-top: 10px;">TERIMA KASIH ATAS KUNJUNGAN ANDA</p>
+            </div>
+            <button onclick="window.print()" class="btn-cetak">
+                <i class="fas fa-print"></i> CETAK STRUK
+            </button>
+        </div>
+    </div>
+
+
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="footer-logo">Depot <span>Mini</span> <i class="fas fa-store"></i></h2>
+                <p>Menyajikan paket makanan lezat dengan harga bersahabat di jantung Abiansemal. Kualitas rasa adalah prioritas kami.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#menu">Daftar Menu</a></li>
+                    <li><a href="#pesan">Pesan Sekarang</a></li>
+                    <li><a href="#lokasi">Lokasi Depot</a></li>
+                    <li><a href="#kontak">Hubungi Kami</a></li>
+                </ul>
+            </div>
+
+            <div id="kontak" class="footer-section contact">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-phone"></i> +62 812 3456 789</p>
+                <p><i class="fas fa-envelope"></i> halo@depotmini.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Abiansemal No. 10, Bali</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2026 Depot Mini | <i class="fas fa-heart" style="color: orange;"></i> Mantroaa
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
